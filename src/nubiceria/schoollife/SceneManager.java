@@ -1,5 +1,8 @@
 package nubiceria.schoollife;
 
+import nubiceria.schoollife.scenes.BaseScene;
+import nubiceria.schoollife.scenes.SplashScene;
+
 import org.andengine.engine.Engine;
 import org.andengine.ui.IGameInterface.OnCreateSceneCallback;
 

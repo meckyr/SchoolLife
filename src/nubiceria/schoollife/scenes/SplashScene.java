@@ -1,5 +1,6 @@
-package nubiceria.schoollife;
+package nubiceria.schoollife.scenes;
 
+import nubiceria.schoollife.SceneManager;
 import nubiceria.schoollife.SceneManager.SceneType;
 import org.andengine.entity.scene.background.Background;
 import org.andengine.entity.sprite.Sprite;

@@ -5,10 +5,23 @@ import org.andengine.engine.camera.SmoothCamera;
 import org.andengine.engine.options.EngineOptions;
 import org.andengine.engine.options.ScreenOrientation;
 import org.andengine.engine.options.resolutionpolicy.RatioResolutionPolicy;
+import org.andengine.entity.scene.IOnSceneTouchListener;
 import org.andengine.entity.scene.Scene;
+import org.andengine.input.touch.TouchEvent;
+import org.andengine.input.touch.detector.ScrollDetector;
+import org.andengine.input.touch.detector.ScrollDetector.IScrollDetectorListener;
 import org.andengine.ui.activity.BaseGameActivity;
 
-public class MainActivity extends BaseGameActivity {
+/**
+ * @author LCF
+ *
+ */
+/**
+ * @author LCF
+ * 
+ */
+public class MainActivity extends BaseGameActivity implements
+		IOnSceneTouchListener, IScrollDetectorListener {
 
 	private static int CAMERA_WIDTH = 480;
 	private static int CAMERA_HEIGHT = 320;
@@ -48,6 +61,37 @@ public class MainActivity extends BaseGameActivity {
 			OnPopulateSceneCallback pOnPopulateSceneCallback) throws Exception {
 		// TODO Auto-generated method stub
 		pOnPopulateSceneCallback.onPopulateSceneFinished();
+	}
+
+	// ---------------------------------------------
+	// Screen Touch & Scroll handlers
+	// ---------------------------------------------
+
+	@Override
+	public void onScrollStarted(ScrollDetector pScollDetector, int pPointerID,
+			float pDistanceX, float pDistanceY) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onScroll(ScrollDetector pScollDetector, int pPointerID,
+			float pDistanceX, float pDistanceY) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onScrollFinished(ScrollDetector pScollDetector, int pPointerID,
+			float pDistanceX, float pDistanceY) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean onSceneTouchEvent(Scene pScene, TouchEvent pSceneTouchEvent) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
